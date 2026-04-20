@@ -1,0 +1,74 @@
+.destinations {
+    padding: var(--space-2xl) 0;
+    background: var(--white);
+}
+
+.destinations__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--space-xl);
+}
+
+.destinations__label {
+    font-family: var(--font-script, 'Dancing Script', cursive);
+    font-size: 1.25rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.destinations__title {
+    font-size: clamp(1.35rem, 2.8vw, 1.9rem);
+    color: var(--brand-navy, #0a1628);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.destinations__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.destinations__card {
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-md);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destinations__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.destinations__card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+}
+
+.destinations__card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.destinations__card-title {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.destinations__card-tours {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: 600;
+}

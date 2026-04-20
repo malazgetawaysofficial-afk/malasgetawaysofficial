@@ -1,0 +1,86 @@
+.testimonials {
+    padding: var(--space-2xl) 0;
+    background: var(--surface-bg, #f4f5f1);
+}
+
+.testimonials__header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.testimonials__label {
+    font-family: var(--font-script, 'Dancing Script', cursive);
+    font-size: 1.25rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.testimonials__title {
+    font-size: clamp(1.35rem, 2.8vw, 1.9rem);
+    color: var(--brand-navy, #0a1628);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+}
+
+.testimonials__desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-lg);
+}
+
+.testimonials__card {
+    background: var(--white);
+    padding: var(--space-xl);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.testimonials__card::before {
+    content: '"';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 4rem;
+    color: var(--gold);
+    font-family: var(--font-serif, 'Playfair Display', serif);
+    opacity: 0.2;
+    line-height: 1;
+}
+
+.testimonials__card-text {
+    font-size: 0.95rem;
+    color: var(--brand-navy, #0a1628);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials__card-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--brand-orange, #e67e22);
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+}

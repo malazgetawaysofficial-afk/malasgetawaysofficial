@@ -1,0 +1,159 @@
+.packages {
+    padding: var(--space-2xl) 0;
+    background: var(--white);
+}
+
+.packages__top {
+    display: grid;
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr) auto;
+    gap: var(--space-lg);
+    align-items: start;
+    margin-bottom: var(--space-xl);
+}
+
+.packages__label {
+    font-family: var(--font-script, 'Dancing Script', cursive);
+    font-size: 1.25rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.packages__title {
+    font-size: clamp(1.35rem, 2.8vw, 1.9rem);
+    color: var(--brand-navy, #0a1628);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.packages__desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 520px;
+}
+
+.packages__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    background: var(--brand-orange, #e67e22);
+    color: var(--white) !important;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.packages__cta:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+}
+
+.packages__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-md);
+}
+
+.packages__card {
+    background: var(--white);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.packages__card--link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.packages__card--link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.12);
+}
+
+.packages__card--link:focus-visible {
+    outline: 2px solid var(--brand-orange, #e67e22);
+    outline-offset: 3px;
+}
+
+.packages__card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.packages__card-body {
+    padding: var(--space-md);
+}
+
+.packages__card-title {
+    font-size: 1.1rem;
+    color: var(--brand-navy, #0a1628);
+    margin-bottom: 0.5rem;
+}
+
+.packages__card-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin-bottom: var(--space-xs);
+}
+
+.packages__card-days {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--brand-orange, #e67e22);
+    margin-bottom: var(--space-sm);
+}
+
+.packages__card-line {
+    height: 1px;
+    background: #e8e4dc;
+    margin: var(--space-sm) 0;
+}
+
+.packages__card-price {
+    font-size: 0.88rem;
+    color: var(--brand-navy, #0a1628);
+    margin-bottom: var(--space-sm);
+}
+
+.packages__card-price strong {
+    font-weight: 700;
+}
+
+.packages__card-book {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--brand-orange, #e67e22) !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.packages__card-book:hover {
+    gap: 0.55rem;
+}
+
+@media (max-width: 1024px) {
+    .packages__top {
+        grid-template-columns: 1fr;
+    }
+
+    .packages__cta {
+        justify-self: start;
+    }
+
+    .packages__grid {
+        grid-template-columns: 1fr;
+    }
+}
