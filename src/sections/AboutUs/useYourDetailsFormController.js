@@ -46,7 +46,16 @@ export function useYourDetailsFormController() {
         setStatusMessage('')
         setStatusType('idle')
         try {
-            await apiManager.post('/your-details', values)
+            // Log to Google Sheets
+            const googleSheetUrl = import.meta.env.VITE_GOOGLE_SHEET_URL
+            if (googleSheetUrl) {
+                await fetch(googleSheetUrl, {
+                    method: 'POST',
+                    mode: 'no-cors', // Important for Google Apps Script redirects
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(values)
+                })
+            }
             
             // Generate WhatsApp Link and redirect
             const waLink = generateWhatsAppLink('919792864074', values, 'Sacred Journey Inquiry')
