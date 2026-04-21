@@ -13,8 +13,7 @@ export const FOOTER_MODEL = {
         { id: 'contact', label: 'Contact Us', href: '#about' },
     ],
     contactLines: [
-        '+91 9792864074',
-        '+91 9889153574',
+        '+91 7905581778',
         'arabianoverseasofficial@gmail.com',
         '1st Floor Regnent Court Iyyattil Junction Chittoor Road, Cochin Distt Ernakulam, Kerala 682011',
     ],

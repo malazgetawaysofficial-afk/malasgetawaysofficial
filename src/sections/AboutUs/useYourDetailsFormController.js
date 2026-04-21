@@ -58,7 +58,7 @@ export function useYourDetailsFormController() {
             }
             
             // Generate WhatsApp Link and redirect
-            const waLink = generateWhatsAppLink('919792864074', values, 'Sacred Journey Inquiry')
+            const waLink = generateWhatsAppLink('917905581778', values, 'Sacred Journey Inquiry')
             
             setStatusType('success')
             setStatusMessage('Details submitted! Redirecting to WhatsApp for confirmation...')
@@ -82,6 +82,8 @@ export function useYourDetailsFormController() {
         values,
         isSubmitting,
         statusMessage,
+        contactNumber: '+91 7905581778',
+        email: 'arabianoverseasofficial@gmail.com',
         statusType,
         onFieldChange,
         onSubmit,
