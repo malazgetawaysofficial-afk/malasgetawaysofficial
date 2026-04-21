@@ -1,6 +1,6 @@
 import './Footer.css'
 import { FOOTER_MODEL as footer } from './footerData'
-import { useContactFormController } from '../../sections/BookingForm/useContactFormController'
+
 
 /**
  * FOOTER — Contact info and copyright.
@@ -8,60 +8,11 @@ import { useContactFormController } from '../../sections/BookingForm/useContactF
  */
 function Footer() {
     const year = new Date().getFullYear()
-    const {
-        formModel,
-        values,
-        isSubmitting,
-        statusMessage,
-        statusType,
-        onFieldChange,
-        onSubmit,
-    } = useContactFormController()
+
 
     return (
         <footer className="footer" id="contact">
             <div className="section-container">
-                <div className="footer__form-wrap">
-                    <div className="footer__form-header">
-                        <h3>{formModel.heading}</h3>
-                        <p>{formModel.subheading}</p>
-                    </div>
-                    <form className="footer__form" onSubmit={onSubmit}>
-                        {formModel.fields.map((field) => (
-                            <label className="footer__form-field" key={field.name}>
-                                <span>{field.label}</span>
-                                {field.type === 'textarea' ? (
-                                    <textarea
-                                        name={field.name}
-                                        placeholder={field.placeholder}
-                                        value={values[field.name]}
-                                        onChange={onFieldChange}
-                                        required={field.required}
-                                        rows={4}
-                                    />
-                                ) : (
-                                    <input
-                                        name={field.name}
-                                        type={field.type}
-                                        placeholder={field.placeholder}
-                                        value={values[field.name]}
-                                        onChange={onFieldChange}
-                                        required={field.required}
-                                    />
-                                )}
-                            </label>
-                        ))}
-                        <button className="footer__form-submit" type="submit" disabled={isSubmitting}>
-                            {isSubmitting ? 'Sending...' : formModel.submitText}
-                        </button>
-                        {statusMessage ? (
-                            <p className={`footer__form-status footer__form-status--${statusType}`}>
-                                {statusMessage}
-                            </p>
-                        ) : null}
-                    </form>
-                </div>
-
                 <div className="footer__inner">
                     <div className="footer__brand">
                         <h3 className="footer__logo">

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { YOUR_DETAILS_FORM_MODEL } from './yourDetailsFormModel'
 import { TRAVEL_FORM_PREFILL_STORAGE_KEY } from '../../constants/storageKeys'
 import { apiManager } from '../../services/apiManager'
+import { generateWhatsAppLink } from '../../utils/whatsappHelper'
 
 const INITIAL = {
     firstName: '',
@@ -46,9 +47,19 @@ export function useYourDetailsFormController() {
         setStatusType('idle')
         try {
             await apiManager.post('/your-details', values)
-            setValues(INITIAL)
+            
+            // Generate WhatsApp Link and redirect
+            const waLink = generateWhatsAppLink('919792864074', values, 'Sacred Journey Inquiry')
+            
             setStatusType('success')
-            setStatusMessage(YOUR_DETAILS_FORM_MODEL.successMessage)
+            setStatusMessage('Details submitted! Redirecting to WhatsApp for confirmation...')
+            
+            // Small delay to let user see the status before redirecting
+            setTimeout(() => {
+                window.open(waLink, '_blank')
+                setValues(INITIAL)
+            }, 1000)
+
         } catch (_e) {
             setStatusType('error')
             setStatusMessage(YOUR_DETAILS_FORM_MODEL.errorMessage)

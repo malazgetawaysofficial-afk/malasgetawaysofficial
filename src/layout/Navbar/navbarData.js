@@ -7,11 +7,11 @@ export const NAVIGATION_MODEL = {
         { id: 'packages', label: 'Packages', href: '#services' },
         { id: 'why', label: 'Why Us', href: '#why-choose' },
         { id: 'process', label: 'Process', href: '#process' },
-        { id: 'contact', label: 'Contact Us', href: '#contact' },
+        { id: 'contact', label: 'Contact Us', href: '#about' },
     ],
     customerDetailsButton: {
-        label: 'Customer Details',
-        href: '#booking-form',
+        label: 'Book Now',
+        href: '#about',
     },
 }
 
