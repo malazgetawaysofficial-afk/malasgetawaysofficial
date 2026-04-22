@@ -56,16 +56,20 @@ export function useYourDetailsFormController() {
                     body: JSON.stringify(values)
                 })
             }
-            
+
             // Generate WhatsApp Link and redirect
             const waLink = generateWhatsAppLink('917905581778', values, 'Sacred Journey Inquiry')
-            
+
             setStatusType('success')
             setStatusMessage('Details submitted! Redirecting to WhatsApp for confirmation...')
-            
+
             // Small delay to let user see the status before redirecting
             setTimeout(() => {
-                window.open(waLink, '_blank')
+                const a = document.createElement('a')
+                a.href = waLink
+                a.target = '_blank'
+                a.rel = 'noopener noreferrer'
+                a.click()
                 setValues(INITIAL)
             }, 1000)
 
