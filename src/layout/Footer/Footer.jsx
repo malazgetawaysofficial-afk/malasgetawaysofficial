@@ -15,10 +15,10 @@ function Footer() {
             <div className="section-container">
                 <div className="footer__inner">
                     <div className="footer__brand">
-                        <h3 className="footer__logo">
-                            <span className="footer__logo-icon">{footer.logoIcon}</span>
-                            {footer.brandName}
-                        </h3>
+                        <div className="footer__logo">
+                            <img src="/logo.png" alt="Malaz Getaways Logo" className="footer__logo-img" />
+                            <h3 className="footer__logo-text">{footer.brandName}</h3>
+                        </div>
                         <p className="footer__tagline">
                             {footer.taglineLine1}<br />
                             {footer.taglineLine2}

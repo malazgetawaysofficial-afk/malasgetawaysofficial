@@ -1,5 +1,5 @@
 export const NAVIGATION_MODEL = {
-    brandName: 'Arabian Overseas',
+    brandName: 'Malaz Getaways',
     logoIcon: '✦',
     links: [
         { id: 'home', label: 'Home', href: '#hero' },

@@ -1,8 +1,8 @@
 export const WHY_CHOOSE_MODEL = {
-    label: 'Why Choose Arabian Overseas',
+    label: 'Why Choose Malaz Getaways',
     title: 'We Are Dedicated Planners for Your Sacred Journey',
     intro:
-        'At Arabian Overseas, we specialize in planning Hajj, Umrah & Ziyarat journeys with care, devotion, and professionalism. From travel arrangements to on-ground support, we ensure a smooth, comfortable, and spiritually fulfilling experience for every pilgrim.',
+        'At Malaz Getaways, we specialize in planning Hajj, Umrah & Ziyarat journeys with care, devotion, and professionalism. From travel arrangements to on-ground support, we ensure a smooth, comfortable, and spiritually fulfilling experience for every pilgrim.',
     imageUrl:
         'https://images.unsplash.com/photo-1526779259212-939e64788e3c?auto=format&fit=crop&w=1200&q=80',
     features: [

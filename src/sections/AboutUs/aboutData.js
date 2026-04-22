@@ -21,7 +21,7 @@ export const ABOUT_MODEL = {
     titleLine1: 'Helping You Experience',
     titleAccent: 'A Meaningful Spiritual Journey',
     paragraphs: [
-        'We are dedicated to helping pilgrims experience a meaningful and spiritually fulfilling journey. From careful planning to complete on-ground support, Arabian Overseas ensures comfort, guidance, and peace of mind throughout your Hajj, Umrah and Ziyarat travel.',
+        'We are dedicated to helping pilgrims experience a meaningful and spiritually fulfilling journey. From careful planning to complete on-ground support, Malaz Getaways ensures comfort, guidance, and peace of mind throughout your Hajj, Umrah and Ziyarat travel.',
         'We offer trusted and transparent packages with timely confirmation, clear communication, and complete service support so every traveler can focus on ibadah with confidence.',
     ],
     stats: [

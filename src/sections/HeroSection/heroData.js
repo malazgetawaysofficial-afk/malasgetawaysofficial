@@ -2,7 +2,7 @@ export const COMPANY_PROFILE_MODEL = {
     hero: {
         title: 'Your Reliable Partner for Hajj, Umrah & Ziyarat Journeys',
         subtitle:
-            'Arabian Overseas is your trusted partner for Hajj, Umrah & Ziyarat packages, offering seamless travel with complete guidance. We are committed to comfort, reliability, and a spiritually fulfilling journey for every pilgrim.',
+            'Malaz Getaways is your trusted partner for Hajj, Umrah & Ziyarat packages, offering seamless travel with complete guidance. We are committed to comfort, reliability, and a spiritually fulfilling journey for every pilgrim.',
     },
     whyChooseUs: [
         'Best Accommodation',

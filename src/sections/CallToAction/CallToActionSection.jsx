@@ -8,7 +8,7 @@ function CallToActionSection() {
                     <h2 className="cta-section__title">Ready to Start Your Sacred Journey?</h2>
                     <p className="cta-section__subtitle">
                         Join thousands of pilgrims who have experienced a seamless and spiritually 
-                        enriching Hajj and Umrah journey with Arabian Overseas.
+                        enriching Hajj and Umrah journey with Malaz Getaways.
                     </p>
                     <a href="#about" className="cta-section__button">
                         Book Your Sacred Journey Now
