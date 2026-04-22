@@ -65,11 +65,7 @@ export function useYourDetailsFormController() {
 
             // Small delay to let user see the status before redirecting
             setTimeout(() => {
-                const a = document.createElement('a')
-                a.href = waLink
-                a.target = '_blank'
-                a.rel = 'noopener noreferrer'
-                a.click()
+                window.location.href = waLink
                 setValues(INITIAL)
             }, 1000)
 
