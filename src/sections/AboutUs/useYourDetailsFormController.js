@@ -58,18 +58,14 @@ export function useYourDetailsFormController() {
             }
 
             // Generate WhatsApp Link and redirect
-            const waLink = generateWhatsAppLink('917905581778', values, 'Sacred Journey Inquiry')
+            const waLink = generateWhatsAppLink('919451542610', values, 'Sacred Journey Inquiry')
 
             setStatusType('success')
             setStatusMessage('Details submitted! Redirecting to WhatsApp for confirmation...')
 
             // Small delay to let user see the status before redirecting
             setTimeout(() => {
-                const a = document.createElement('a')
-                a.href = waLink
-                a.target = '_blank'
-                a.rel = 'noopener noreferrer'
-                a.click()
+                window.location.href = waLink
                 setValues(INITIAL)
             }, 1000)
 
@@ -86,8 +82,8 @@ export function useYourDetailsFormController() {
         values,
         isSubmitting,
         statusMessage,
-        contactNumber: '+91 7905581778',
-        email: 'arabianoverseasofficial@gmail.com',
+        contactNumber: '+91 9451542610',
+        email: 'malazgetawaysofficial@gmail.com',
         statusType,
         onFieldChange,
         onSubmit,

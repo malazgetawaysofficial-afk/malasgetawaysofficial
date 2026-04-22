@@ -31,7 +31,7 @@ export function generateWhatsAppLink(phone, data, title = "New Inquiry from Webs
         }
     });
 
-    message += `\n_Sent from Arabian Overseas Website_`;
+    message += `\n_Sent from Malaz Getaways Website_`;
 
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phone}?text=${encodedMessage}`;

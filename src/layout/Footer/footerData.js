@@ -1,5 +1,5 @@
 export const FOOTER_MODEL = {
-    brandName: 'Arabian Overseas',
+    brandName: 'Malaz Getaways',
     logoIcon: '✦',
     taglineLine1: 'Trusted travel and visa services',
     taglineLine2: 'for seamless spiritual journeys.',
@@ -13,8 +13,8 @@ export const FOOTER_MODEL = {
         { id: 'contact', label: 'Contact Us', href: '#about' },
     ],
     contactLines: [
-        '+91 7905581778',
-        'arabianoverseasofficial@gmail.com',
+        '+91 9451542610',
+        'malazgetawaysofficial@gmail.com',
         '1st Floor Regnent Court Iyyattil Junction Chittoor Road, Cochin Distt Ernakulam, Kerala 682011',
     ],
 }
