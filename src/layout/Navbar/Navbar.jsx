@@ -20,7 +20,7 @@ function Navbar() {
         <nav ref={navRef} className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} id="navbar">
             <div className="navbar__inner">
                 <a href="/" className="navbar__logo" id="navbar-logo">
-                    <img src="/logo.png" alt="Malaz Getaways Logo" className="navbar__logo-img" />
+                    <img src="/logo.jpg" alt="Malaz Getaways Logo" className="navbar__logo-img" />
                     <span className="navbar__logo-text">{nav.brandName}</span>
                 </a>
                 <div className="navbar__actions">
