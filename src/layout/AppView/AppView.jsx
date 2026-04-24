@@ -7,6 +7,7 @@ import AboutDetailsSection from '../../sections/AboutUs/AboutDetailsSection'
 import CallToActionSection from '../../sections/CallToAction/CallToActionSection'
 import TestimonialsSection from '../../sections/Testimonials/TestimonialsSection'
 import DestinationsSection from '../../sections/Destinations/DestinationsSection'
+import GallerySection from '../../sections/Gallery/GallerySection'
 import Footer from '../Footer/Footer'
 import '../../App.css'
 
@@ -19,6 +20,7 @@ const SECTION_COMPONENTS = {
     aboutDetails: AboutDetailsSection,
     destinations: DestinationsSection,
     testimonials: TestimonialsSection,
+    gallery: GallerySection,
     cta: CallToActionSection,
     footer: Footer,
 }

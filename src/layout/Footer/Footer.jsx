@@ -16,7 +16,7 @@ function Footer() {
                 <div className="footer__inner">
                     <div className="footer__brand">
                         <div className="footer__logo">
-                            <img src="/logo.png" alt="Malaz Getaways Logo" className="footer__logo-img" />
+                            <img src="/logo.jpg" alt="Malaz Getaways Logo" className="footer__logo-img" />
                             <h3 className="footer__logo-text">{footer.brandName}</h3>
                         </div>
                         <p className="footer__tagline">
