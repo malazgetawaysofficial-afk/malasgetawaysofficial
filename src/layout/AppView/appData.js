@@ -8,6 +8,7 @@ export const APP_SECTION_ORDER = [
     'whyChoose',
     'destinations',
     'testimonials',
+    'gallery',
     'cta',
     'footer',
 ]
